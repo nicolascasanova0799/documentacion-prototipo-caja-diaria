@@ -12,6 +12,7 @@ site:
           key: reporte-caja-diaria
           title: Reporte Caja Diaria
           path: reporte
+          default: true
           content:
             directory: ./
             language: es
