@@ -1,0 +1,17 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+site:
+  title: Reporte Caja Diaria
+  structure:
+    - type: section
+      key: documentacion
+      title: Documentación
+      path: documentacion
+      children:
+        - type: space
+          key: reporte-caja-diaria
+          title: Reporte Caja Diaria
+          path: reporte
+          default: true
+          content:
+            directory: ./
+            language: es
