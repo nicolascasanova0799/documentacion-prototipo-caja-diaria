@@ -16,3 +16,9 @@ site:
           content:
             directory: ./
             language: es
+        - type: space
+          key: space-1
+          title: Copy of Reporte Caja Diaria
+          path: copy-of-reporte-caja-diaria
+          content:
+            directory: null
