@@ -19,7 +19,7 @@ icon: table-list
 
 1. Efectivo — solo ruta  
 2. Cheques — solo ruta  
-3. Transferencias — ruta (incluye anticipo)  
+3. Transferencias — ruta, anticipos y transferencia por corroborar  
 4. GetNet  
 5. Crédito (cobro vendedor)  
 6. Notas de crédito (egreso)  

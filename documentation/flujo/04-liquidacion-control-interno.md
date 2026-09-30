@@ -15,7 +15,7 @@ icon: clipboard-check
 
 | Motivo | Intención |
 |--------|-----------|
-| Transferencia por corroborar | Transferencia en validación, no contada como crédito |
+| Transferencia por corroborar | Transferencia en validación. Se cuenta en la línea Transferencias, no en Crédito |
 | Cheque por regularizar | Cheque pendiente de regularización |
 | Pendiente de depósito | Efectivo o cheque aún no depositado |
 
@@ -23,8 +23,8 @@ icon: clipboard-check
 **Por validar:** valor por defecto del checkbox (legacy premarcado; Manu prefiere desmarcado; prototipo ya desmarcado). Ver [P-05](../preguntas-pendientes.md#p-05).
 {% endhint %}
 
-{% hint style="danger" %}
-**Pendiente de definición:** en qué línea del resumen aparece una transferencia “por corroborar” ([Q-12](../preguntas-pendientes.md#q-12)).
+{% hint style="success" %}
+**Confirmado:** la transferencia “por corroborar” entra al ítem Transferencias del resumen ([Q-12](../preguntas-pendientes.md#q-12)).
 {% endhint %}
 
 {% hint style="info" %}

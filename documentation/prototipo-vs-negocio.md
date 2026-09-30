@@ -40,7 +40,7 @@ icon: code-compare
 | Vista detalle UX | Modal o sección inferior | Tabla única + modal | Supuesto del prototipo |
 | GetNet clicabilidad | No definido | Clic en Resumen, no en Detalle | Supuesto del prototipo ([Q-13](preguntas-pendientes.md#q-13)) |
 | Total Rutas vs medios | No cuadra en ejemplos | Ejemplo ilustrativo sin cuadrar | Por validar ([Q-14](preguntas-pendientes.md#q-14)) |
-| Transferencia por corroborar | No es Crédito (L) | Todavía no se sabe en qué línea del resumen cae | Pendiente de definición ([Q-12](preguntas-pendientes.md#q-12)) |
+| Transferencia por corroborar | Entra en la línea Transferencias, no en Crédito | El prototipo no la separa como fila propia | Confirmado ([Q-12](preguntas-pendientes.md#q-12)) |
 
 {% hint style="warning" %}
 **Por validar:** prioriza [Preguntas pendientes](preguntas-pendientes.md) antes de implementar backend.

@@ -5,7 +5,7 @@ icon: circle-question
 
 # Preguntas pendientes
 
-**Respuesta primero:** catorce preguntas siguen abiertas; esta página separa lo que ya sabemos de lo que falta decidir con Manu y finanzas antes del backend.
+**Respuesta primero:** la mayoría de las preguntas sigue abierta. Q-12 ya quedó cerrada: la transferencia por corroborar entra en la línea Transferencias.
 
 {% hint style="info" %}
 **Cifras ilustrativas:** los montos, choferes y usuarios de esta página son cifras ilustrativas del prototipo (datos simulados, commit 2ce55a3b). No son datos reales ni cifras validadas.
@@ -225,14 +225,14 @@ icon: circle-question
 
 | | Contenido |
 |---|-----------|
-| Conocido | No es Crédito según L §3 |
-| Desconocido | Línea destino en el resumen (no existe “Transferencias pendientes” como fila) |
-| Estado | Pendiente de definición |
-| Fuente | L §3, L §4 |
-| Ver también | [Liquidación y control interno](flujo/04-liquidacion-control-interno.md) |
+| Conocido | No es Crédito. El levantamiento la trata como transferencia pendiente de validación bancaria y se suma en la línea **Transferencias**. “Transferencias pendientes” no es una fila aparte del resumen. |
+| Desconocido | Cómo se marca en el detalle que todavía está por corroborar (eso sigue en [P-04](#p-04)) |
+| Estado | Confirmado |
+| Fuente | L §4, tabla Motivo de control interno; aclaración del 30-09-2026 |
+| Ver también | [Liquidación y control interno](flujo/04-liquidacion-control-interno.md), [Líneas del reporte](referencia/lineas-del-reporte.md) |
 
-{% hint style="danger" %}
-**Pendiente de definición:** el negocio todavía no define esta regla.
+{% hint style="success" %}
+**Confirmado:** el cobro vendedor con control interno “Transferencia por corroborar” entra al ítem Transferencias del resumen, no a Crédito.
 {% endhint %}
 
 ---

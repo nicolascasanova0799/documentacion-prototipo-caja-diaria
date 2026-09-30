@@ -13,15 +13,15 @@ icon: scale-balanced
 
 ## Confirmadas
 
-| Regla                      | Descripción                                                                          |
-| -------------------------- | ------------------------------------------------------------------------------------ |
-| Exclusividad de Ruta       | Efectivo y cheques del resumen provienen **solo** de ruta                            |
-| Pago Directo               | Módulo de ingreso manual; **no** es medio de pago en el resumen                      |
-| Anticipo vs Cobranza       | Misma factura en ruta del día → Anticipo; factura anterior → Cobranza                |
-| Crédito vs control interno | Crédito = cobro vendedor sin control interno; transferencia por corroborar ≠ crédito |
-| Rango acotado              | Consulta limitada a mismo mes o máximo 30 días                                       |
-| Exportar e imprimir        | Debe permitir exportar e imprimir                                                    |
-| NC, Protestos, Reversos    | Tratados como egresos validados                                                      |
+| Regla                      | Descripción                                                                                                              |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Exclusividad de Ruta       | Efectivo y cheques del resumen provienen **solo** de ruta                                                                |
+| Pago Directo               | Módulo de ingreso manual; **no** es medio de pago en el resumen                                                          |
+| Anticipo vs Cobranza       | Misma factura en ruta del día → Anticipo; factura anterior → Cobranza                                                    |
+| Crédito vs control interno | Crédito = cobro vendedor sin control interno. Con motivo “transferencia por corroborar” entra a la línea Transferencias |
+| Rango acotado              | Consulta limitada a mismo mes o máximo 30 días                                                                           |
+| Exportar e imprimir        | Debe permitir exportar e imprimir                                                                                        |
+| NC, Protestos, Reversos    | Tratados como egresos validados                                                                                          |
 
 ## Supuesto del prototipo
 
