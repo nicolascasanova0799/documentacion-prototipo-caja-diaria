@@ -6,12 +6,12 @@ site:
       key: documentacion
       title: Documentación
       path: documentacion
+      default: true
       children:
         - type: space
           key: reporte-caja-diaria
           title: Reporte Caja Diaria
           path: reporte
-          default: true
           content:
             directory: ./
             language: es
