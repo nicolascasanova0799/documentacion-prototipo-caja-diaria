@@ -1,5 +1,5 @@
 ---
-description: "Recorrido completo del operador en el prototipo Caja Diaria"
+description: Recorrido completo del operador en el prototipo Caja Diaria
 icon: diagram-project
 ---
 
@@ -43,8 +43,7 @@ Usa **Exportar** (Excel/PDF simulados en el prototipo). Imprimir está pendiente
 flowchart LR
   F[Filtro fechas] --> R[Resumen]
   F --> D[Detalle]
-  R --> C[Clic concepto]
-  D --> C
+  D --> C[Clic concepto]
   C --> M[Modal detalle]
   R --> E[Exportar]
   D --> E
@@ -52,11 +51,11 @@ flowchart LR
 
 ## Paso a paso con enlaces
 
-| Paso | Qué hace | Página |
-|------|----------|--------|
-| 1 | Contexto y alcance del prototipo | [Alcance del prototipo](../contexto/alcance-prototipo.md) |
-| 2 | Filtros, vistas, exportación | [Filtros, vistas y exportación](01-filtros-vistas-y-exportacion.md) |
-| 3 | Tabla resumen y maqueta cliente | [Vista Resumen](02-vista-resumen.md) |
-| 4 | Tabla detalle y modales | [Vista Detalle y modales](03-vista-detalle-y-modales.md) |
-| 5 | Origen del checkbox control interno | [Liquidación y control interno](04-liquidacion-control-interno.md) |
-| 6 | Cierre de dudas | [Preguntas pendientes](../preguntas-pendientes.md) |
+| Paso | Qué hace                            | Página                                                              |
+| ---- | ----------------------------------- | ------------------------------------------------------------------- |
+| 1    | Contexto y alcance del prototipo    | [Alcance del prototipo](../contexto/alcance-prototipo.md)           |
+| 2    | Filtros, vistas, exportación        | [Filtros, vistas y exportación](01-filtros-vistas-y-exportacion.md) |
+| 3    | Tabla resumen y maqueta cliente     | [Vista Resumen](02-vista-resumen.md)                                |
+| 4    | Tabla detalle y modales             | [Vista Detalle y modales](03-vista-detalle-y-modales.md)            |
+| 5    | Origen del checkbox control interno | [Liquidación y control interno](04-liquidacion-control-interno.md)  |
+| 6    | Cierre de dudas                     | [Preguntas pendientes](../preguntas-pendientes.md)                  |
