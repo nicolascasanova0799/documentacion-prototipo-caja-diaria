@@ -5,10 +5,10 @@ icon: diagram-project
 
 # Visión general
 
-**Respuesta primero:** filtras por fechas, eliges Resumen o Detalle, abres el detalle de un concepto en modal y puedes exportar (simulado); la liquidación de recorrido es donde nace parte del dato vía control interno.
+**Respuesta primero:** filtras por fechas, eliges Resumen o Detalle y, solo en Detalle, abres el modal de un concepto (GetNet no abre modal por ahora). Puedes exportar (simulado). La liquidación de recorrido es donde nace parte del dato vía control interno.
 
 {% hint style="success" %}
-**Confirmado:** navegación en dos niveles (resumen/detalle y clic en concepto) según levantamiento (L §4 Navegación, N-02).
+**Confirmado:** navegación en dos niveles (Resumen y Detalle) según levantamiento (L §4 Navegación, N-02). El modal se abre solo desde Detalle ([Q-13](../preguntas-pendientes.md#q-13)).
 {% endhint %}
 
 ## Recorrido en pasos
@@ -29,7 +29,7 @@ Elige **Fecha Inicio** y **Fecha Final** y la vista **Resumen** o **Detalle**. E
 {% step %}
 ### Abrir detalle
 
-Haz clic en un concepto (salvo excepciones como Diferencias o Total Caja en resumen) para abrir el modal con columnas por tipo de movimiento.
+En la vista **Detalle**, haz clic en un concepto para abrir el modal. Resumen no abre modal. GetNet no abre modal mientras no esté definida su tabla de detalle ([Q-13](../preguntas-pendientes.md#q-13)).
 {% endstep %}
 
 {% step %}

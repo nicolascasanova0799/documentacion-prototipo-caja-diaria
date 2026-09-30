@@ -24,7 +24,7 @@ icon: book
 | Anticipo                 | Pago vía Pago Directo sobre factura de ruta del mismo día                                                            | Confirmado              |
 | Cobranza                 | Cobros de facturas anteriores fuera de la recaudación del recorrido                                                  | Por validar             |
 | Cobro vendedor           | Crédito en el resumen solo si no lleva control interno                                                               | Confirmado              |
-| Control interno          | Checkbox en liquidación. Motivo “transferencia por corroborar” suma en Transferencias, no en Crédito                 | Confirmado              |
+| Control interno          | Checkbox en liquidación, **desmarcado por defecto**. Motivo “transferencia por corroborar” suma en Transferencias, no en Crédito | Confirmado              |
 | GetNet                   | Ingresos POS / vouchers GetNet en el resumen                                                                         | Pendiente de definición |
 | NC                       | Notas de crédito como egreso                                                                                         | Confirmado              |
 | Protesto                 | Cheques protestados como egreso                                                                                      | Confirmado              |

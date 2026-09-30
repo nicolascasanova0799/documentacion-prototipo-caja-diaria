@@ -19,6 +19,7 @@ icon: scale-balanced
 | Pago Directo               | Módulo de ingreso manual; **no** es medio de pago en el resumen                                                          |
 | Anticipo vs Cobranza       | Misma factura en ruta del día → Anticipo; factura anterior → Cobranza                                                    |
 | Crédito vs control interno | Crédito = cobro vendedor sin control interno. Con motivo “transferencia por corroborar” entra a la línea Transferencias |
+| Checkbox por defecto | “Agregar a control interno” llega desmarcado. Se marca solo como excepción ([P-05](../preguntas-pendientes.md#p-05)) |
 | Rango acotado              | Consulta limitada a mismo mes o máximo 30 días                                                                           |
 | Exportar e imprimir        | Debe permitir exportar e imprimir                                                                                        |
 | NC, Protestos, Reversos    | Tratados como egresos validados                                                                                          |

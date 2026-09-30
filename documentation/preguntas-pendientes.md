@@ -1,11 +1,11 @@
 ---
-description: "Preguntas abiertas P-01 a P-05 y Q-06 a Q-14 del Reporte Caja Diaria"
+description: "Preguntas abiertas y cerradas del Reporte Caja Diaria (P-01 a P-05, Q-06 a Q-14)"
 icon: circle-question
 ---
 
 # Preguntas pendientes
 
-**Respuesta primero:** la mayoría de las preguntas sigue abierta. Q-12 ya quedó cerrada: la transferencia por corroborar entra en la línea Transferencias.
+**Respuesta primero:** la mayoría de las preguntas sigue abierta. Ya quedaron cerradas Q-12 (la transferencia por corroborar entra en la línea Transferencias), P-05 (el checkbox “Agregar a control interno” viene desmarcado por defecto) y Q-13 (el modal solo se abre desde Detalle; GetNet no lo abre mientras no exista su tabla de detalle).
 
 {% hint style="info" %}
 **Cifras ilustrativas:** los montos, choferes y usuarios de esta página son cifras ilustrativas del prototipo (datos simulados, commit 2ce55a3b). No son datos reales ni cifras validadas.
@@ -15,6 +15,7 @@ icon: circle-question
 
 | Estado | Uso en esta página |
 |--------|-------------------|
+| Confirmado | Regla acordada con el cliente |
 | Pendiente de definición | Regla de negocio no definida |
 | Por validar | Hay evidencia pero falta confirmación del cliente |
 | Supuesto del prototipo | Comportamiento del prototipo para revisión |
@@ -99,14 +100,14 @@ icon: circle-question
 
 | | Contenido |
 |---|-----------|
-| Conocido | Legacy premarcado; Manu sugiere desmarcado; prototipo desmarcado (commit 7a717aa7) |
-| Desconocido | Valor por defecto oficial en producción |
-| Estado | Por validar |
-| Fuente | L §4 Crédito, P |
+| Conocido | El checkbox **Agregar a control interno** viene **desmarcado** (desactivado) al abrir el modal. El control interno es una excepción: se marca solo cuando corresponde. El prototipo ya lo muestra así (commit 7a717aa7). |
+| Desconocido | — |
+| Estado | Confirmado |
+| Fuente | L §4 Crédito; aclaración del 30-09-2026 |
 | Ver también | [Liquidación y control interno](flujo/04-liquidacion-control-interno.md) |
 
-{% hint style="warning" %}
-**Por validar:** falta confirmación del cliente antes de construir.
+{% hint style="success" %}
+**Confirmado:** “Agregar a control interno” queda desmarcado por defecto. El usuario lo activa solo cuando hay una excepción por corroborar.
 {% endhint %}
 
 ---
@@ -243,14 +244,14 @@ icon: circle-question
 
 | | Contenido |
 |---|-----------|
-| Conocido | Inconsistencia en prototipo 2ce55a3b |
-| Desconocido | Comportamiento unificado esperado |
-| Estado | Supuesto del prototipo |
-| Fuente | P |
-| Ver también | [Vista Detalle y modales](flujo/03-vista-detalle-y-modales.md) |
+| Conocido | El modal de un concepto se abre **solo desde la vista Detalle**, no desde Resumen. GetNet, por ahora, **no abre modal**: aún no está definida la tabla de detalle que se mostraría. |
+| Desconocido | Columnas y contenido de esa tabla de GetNet (sigue en [P-01](#p-01)) |
+| Estado | Confirmado |
+| Fuente | Aclaración del 30-09-2026 |
+| Ver también | [Vista Detalle y modales](flujo/03-vista-detalle-y-modales.md), [Vista Resumen](flujo/02-vista-resumen.md) |
 
-{% hint style="info" %}
-**Supuesto del prototipo:** así lo muestra la maqueta para poder revisarla; no es una regla acordada.
+{% hint style="success" %}
+**Confirmado:** el modal solo se abre desde Detalle. GetNet no abre modal hasta que se defina su tabla de detalle.
 {% endhint %}
 
 ---

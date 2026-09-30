@@ -5,7 +5,7 @@ icon: clipboard-check
 
 # Liquidación y control interno
 
-**Respuesta primero:** en liquidación de recorrido puedes marcar “Agregar a control interno” con tres motivos; el crédito (cobro vendedor) no usa ese camino, y el valor por defecto del checkbox sigue por validar.
+**Respuesta primero:** en liquidación de recorrido puedes marcar “Agregar a control interno” con tres motivos. El checkbox llega desmarcado; el crédito (cobro vendedor) no usa ese camino.
 
 {% hint style="success" %}
 **Confirmado:** motivos Transferencia por corroborar, Cheque por regularizar y Pendiente de depósito (L §3). Crédito = cobro vendedor **sin** control interno; si hay control interno por transferencia, no es crédito sino validación (L §4 Crédito).
@@ -19,8 +19,8 @@ icon: clipboard-check
 | Cheque por regularizar | Cheque pendiente de regularización |
 | Pendiente de depósito | Efectivo o cheque aún no depositado |
 
-{% hint style="warning" %}
-**Por validar:** valor por defecto del checkbox (legacy premarcado; Manu prefiere desmarcado; prototipo ya desmarcado). Ver [P-05](../preguntas-pendientes.md#p-05).
+{% hint style="success" %}
+**Confirmado:** el checkbox “Agregar a control interno” viene **desmarcado** por defecto. Se activa solo cuando hay una excepción ([P-05](../preguntas-pendientes.md#p-05)).
 {% endhint %}
 
 {% hint style="success" %}
@@ -53,8 +53,8 @@ Confirma que **Crédito** no pasa por control interno en el flujo acordado.
 {% endstep %}
 
 {% step %}
-### Opina sobre el valor por defecto
+### Revisa el valor por defecto
 
-Opina sobre el valor por defecto del checkbox (P-05) y vuelve a [Visión general](vision-general.md) para cerrar el recorrido.
+Confirma que el checkbox llega **desmarcado** y vuelve a [Visión general](vision-general.md) para cerrar el recorrido.
 {% endstep %}
 {% endstepper %}

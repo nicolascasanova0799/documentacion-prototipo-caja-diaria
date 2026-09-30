@@ -5,14 +5,14 @@ icon: table-list
 
 # Vista Resumen
 
-**Respuesta primero:** el resumen lista ingresos (efectivo a GetNet y crédito), egresos (NC, protestos, reversos, diferencias), Total Rutas, Cobranza y Total Caja; casi todas las filas abren detalle excepto Diferencias y Total Caja.
+**Respuesta primero:** el resumen lista ingresos (efectivo a GetNet y crédito), egresos (NC, protestos, reversos, diferencias), Total Rutas, Cobranza y Total Caja. Desde Resumen no se abre el modal: el detalle se abre en la vista Detalle.
 
 {% hint style="info" %}
 **Cifras ilustrativas:** los montos, choferes y usuarios de esta página son cifras ilustrativas del prototipo (datos simulados, commit 2ce55a3b). No son datos reales ni cifras validadas.
 {% endhint %}
 
 {% hint style="success" %}
-**Confirmado:** columnas Concepto, Ingresos y Egresos, y el orden de las líneas según el levantamiento y la maqueta del cliente. El color rojo, el signo “-” y qué filas se pueden abrir son comportamiento del prototipo, no una regla cerrada (Diferencias sigue en P-02).
+**Confirmado:** columnas Concepto, Ingresos y Egresos, y el orden de las líneas según el levantamiento y la maqueta del cliente. El color rojo y el signo “-” son comportamiento del prototipo. El modal no se abre desde esta vista ([Q-13](../preguntas-pendientes.md#q-13)). Diferencias sigue en P-02.
 {% endhint %}
 
 ## Orden de líneas (confirmado)
@@ -60,9 +60,9 @@ Confirma los egresos en rojo con “-” en el prototipo.
 {% endstep %}
 
 {% step %}
-### Clic en líneas
+### Sin modal en Resumen
 
-Haz clic en una línea para abrir su detalle (salvo Diferencias y Total Caja); Total Rutas abre detalle de rutas.
+Confirma que un clic en una línea del resumen no abre modal. El detalle se revisa en [Vista Detalle y modales](03-vista-detalle-y-modales.md).
 {% endstep %}
 
 {% step %}

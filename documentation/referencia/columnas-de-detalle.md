@@ -21,7 +21,7 @@ Las capturas de maqueta están en [Vista Detalle y modales](../flujo/03-vista-de
 | Transferencias | Columnas vacías en Excel/IMG-D | Fecha, N° comprobante, Banco origen, RUT, Cliente, Docto, Monto, Origen (Ruta\|Anticipo) | [P-04](../preguntas-pendientes.md#p-04) |
 | Crédito | Recorrido, chofer, cliente, monto (IMG-D) | Recorrido, Descripción, Monto | [Q-09](../preguntas-pendientes.md#q-09) |
 | Cobranza | Rut cliente, Docto, fechas emisión/vcto, Monto, Usuario (L) | Cliente, Documento, Nota, Monto | [Q-09](../preguntas-pendientes.md#q-09) (¿Usuario?) |
-| GetNet | — | Fecha, N° voucher, Cliente, Monto, Usuario | [P-01](../preguntas-pendientes.md#p-01) |
+| GetNet | Tabla de detalle sin definir | No abre modal por ahora | [Q-13](../preguntas-pendientes.md#q-13), [P-01](../preguntas-pendientes.md#p-01) |
 | NC | Docto, Fecha, Cliente, Monto | Folio, Descripción, Monto | [Q-09](../preguntas-pendientes.md#q-09) |
 | Protestos | Docto, Fecha, Cliente, Monto | Docto, Fecha, Cliente, Monto | Alineado a IMG-D |
 | Reversos | Docto, Fecha, Cliente, Monto | Docto, Fecha, Cliente, Monto | Separado de Protestos en resumen (OK con L) |

@@ -5,7 +5,7 @@ icon: magnifying-glass
 
 # Vista Detalle y modales
 
-**Respuesta primero:** la vista Detalle muestra una sola tabla Descripción/Monto; al hacer clic se abre un modal con columnas según el concepto, alineado al feedback del cliente más que a la imagen apilada del Excel.
+**Respuesta primero:** la vista Detalle muestra una sola tabla Descripción/Monto. El modal de un concepto se abre **solo desde aquí**, no desde Resumen. GetNet no abre modal mientras no esté definida su tabla de detalle.
 
 {% hint style="info" %}
 **Cifras ilustrativas:** los montos, choferes y usuarios de esta página son cifras ilustrativas del prototipo (datos simulados, commit 2ce55a3b). No son datos reales ni cifras validadas.
@@ -19,11 +19,12 @@ icon: magnifying-glass
 
 Rutas, Efectivo, Cheques, Transferencias, Crédito, Cobranza, GetNet, Notas de crédito, Protestos, Reversos, Total Caja. **No** hay fila Diferencias en Detalle. Egresos en rojo con “-”.
 
-## Inconsistencia conocida
+## Dónde se abre el modal
 
 | Comportamiento | Resumen | Detalle | Estado |
 |----------------|---------|---------|--------|
-| Clic en GetNet | Abre modal | No clicable | Supuesto del prototipo ([Q-13](../preguntas-pendientes.md#q-13)) |
+| Clic en un concepto | No abre modal | Abre el modal de detalle | Confirmado ([Q-13](../preguntas-pendientes.md#q-13)) |
+| Clic en GetNet | No abre modal | No abre modal: la tabla de detalle aún no está definida | Confirmado, tabla pendiente ([Q-13](../preguntas-pendientes.md#q-13), [P-01](../preguntas-pendientes.md#p-01)) |
 
 ## Maqueta del cliente (referencia)
 
@@ -47,7 +48,7 @@ Abre la vista **Detalle** desde el filtro y revisa la lista de conceptos.
 {% step %}
 ### Abre un modal
 
-Haz clic en un concepto para abrir el modal y revisa título “Detalle &lt;Concepto&gt;”.
+Haz clic en un concepto (salvo GetNet) para abrir el modal y revisa el título “Detalle &lt;Concepto&gt;”. GetNet no abre modal: su tabla de detalle aún no está definida.
 {% endstep %}
 
 {% step %}
@@ -59,7 +60,7 @@ Compara columnas con [Columnas de detalle](../referencia/columnas-de-detalle.md)
 {% step %}
 ### Anota deltas
 
-Anota diferencias (GetNet no clicable, Q-13) y enlaza preguntas abiertas.
+Anota que el modal solo nace en Detalle y que GetNet queda cerrado hasta definir su tabla ([Q-13](../preguntas-pendientes.md#q-13)).
 {% endstep %}
 {% endstepper %}
 
