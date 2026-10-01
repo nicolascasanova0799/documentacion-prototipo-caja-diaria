@@ -17,7 +17,7 @@ icon: diagram-project
 {% step %}
 ### Filtrar
 
-Elige **Fecha Inicio** y **Fecha Final** y la vista **Resumen** o **Detalle**. En producción el rango debe estar acotado (mes o 30 días); el prototipo solo valida inicio ≤ fin.
+Elige **Fecha Inicio** y **Fecha Final** y la vista **Resumen** o **Detalle**. Si ambas fechas son del mismo mes, se permite el mes completo. Si cruzan de mes, el máximo es 30 días ([Q-10](../preguntas-pendientes.md#q-10)).
 {% endstep %}
 
 {% step %}
@@ -35,7 +35,7 @@ En la vista **Detalle**, haz clic en un concepto para abrir el modal. Resumen no
 {% step %}
 ### Exportar
 
-Usa **Exportar** (Excel/PDF simulados en el prototipo). Imprimir está pendiente de definir con el cliente ([Q-11](../preguntas-pendientes.md#q-11)).
+Usa **Exportar** para Excel e **Imprimir** para PDF. En el prototipo ambos están simulados ([Q-11](../preguntas-pendientes.md#q-11)).
 {% endstep %}
 {% endstepper %}
 

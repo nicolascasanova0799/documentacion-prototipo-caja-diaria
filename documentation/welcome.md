@@ -25,5 +25,5 @@ icon: hand-wave
 | 4    | [Preguntas pendientes](preguntas-pendientes.md)        | Lo que falta decidir con el cliente            |
 
 {% hint style="warning" %}
-**Por validar:** Cobranza, la fórmula de Total Caja y la forma exacta del tope de fechas (30 días o el mismo mes) siguen abiertas. El tope en sí está pedido; lo que falta es cómo se aplica. No las trates como cerradas hasta la reunión tripartita.
+**Por validar:** Cobranza y la fórmula de Total Caja siguen abiertas. El tope de fechas ya está cerrado: mes completo si ambas fechas son del mismo mes, o 30 días si cruzan de mes ([Q-10](preguntas-pendientes.md#q-10)).
 {% endhint %}

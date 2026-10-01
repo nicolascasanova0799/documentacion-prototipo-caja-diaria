@@ -23,8 +23,9 @@ icon: bullseye
 | Conectividad | Sin GraphQL ni ERP real; Angular 20 offline                                                                | Supuesto del prototipo                                   |
 | Lectura      | Solo consulta; no persiste cambios de negocio                                                              | Confirmado (plan L §9)                                   |
 | Vistas       | Resumen sin modal; Detalle abre modal por concepto, salvo GetNet (tabla sin definir)                       | Confirmado ([Q-13](../preguntas-pendientes.md#q-13))     |
-| Exportación  | Botones Excel y PDF muestran toast de exportación simulada                                                 | Supuesto del prototipo                                   |
-| Impresión    | No hay botón Imprimir                                                                                      | Delta vs L (ver [Q-11](../preguntas-pendientes.md#q-11)) |
+| Exportación  | Botón Exportar; toast de Excel simulado                                                                    | Confirmado ([Q-11](../preguntas-pendientes.md#q-11))     |
+| Impresión    | Botón Imprimir; toast de PDF simulado                                                                      | Confirmado ([Q-11](../preguntas-pendientes.md#q-11))     |
+| Rango        | Mismo mes completo; entre meses, máximo 30 días                                                            | Confirmado ([Q-10](../preguntas-pendientes.md#q-10))     |
 | Ruta de menú | Finanzas > Caja Diaria                                                                                     | Prototipo (2ce55a3b)                                     |
 
 ## Fuera del prototipo (esta documentación)

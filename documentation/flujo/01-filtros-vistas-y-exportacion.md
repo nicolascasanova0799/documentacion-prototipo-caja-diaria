@@ -5,14 +5,14 @@ icon: filter
 
 # Filtros, vistas y exportación
 
-**Respuesta primero:** el prototipo exige fechas válidas (inicio ≤ fin), alterna Resumen/Detalle al vuelo y simula Excel/PDF; aún no aplica el límite de mes/30 días ni Imprimir.
+**Respuesta primero:** el prototipo exige fechas válidas (inicio ≤ fin), acepta el mes completo si ambas fechas son del mismo mes y, si cruzan de mes, como máximo 30 días. Exportar simula Excel e Imprimir simula PDF.
 
 {% hint style="success" %}
 **Confirmado:** Fecha Inicio, Fecha Final y vistas Resumen y Detalle (L §4). Exportar e imprimir son requeridos a nivel negocio (L §4, RFP-05).
 {% endhint %}
 
 {% hint style="info" %}
-**Supuesto del prototipo:** rango por defecto = inicio del mes actual hasta hoy; solo valida inicio ≤ fin; no bloquea rangos largos.
+**Confirmado:** rango por defecto = inicio del mes actual hasta hoy. Mismo mes calendario permite el mes completo (incluido uno de 31 días). Meses distintos: máximo 30 días ([Q-10](../preguntas-pendientes.md#q-10)). Exportar = Excel e Imprimir = PDF ([Q-11](../preguntas-pendientes.md#q-11)).
 {% endhint %}
 
 ## Comportamiento en el prototipo (2ce55a3b)
@@ -22,11 +22,12 @@ icon: filter
 | Radio Resumen / Detalle | Resumen por defecto; cambio dispara búsqueda si el formulario es válido | Supuesto del prototipo |
 | Botón Buscar | Presente además del auto-disparo | Supuesto del prototipo |
 | Datos devueltos | Siempre el mismo fixture sin importar el rango | Supuesto del prototipo |
-| Excel / PDF | Toast “exportación simulada” | Supuesto del prototipo |
-| Imprimir | No existe botón | Delta vs negocio ([Q-11](../preguntas-pendientes.md#q-11)) |
+| Límite de rango | Mismo mes completo; entre meses, máximo 30 días. La búsqueda no corre si se excede | Confirmado ([Q-10](../preguntas-pendientes.md#q-10)) |
+| Exportar | Botón Exportar; toast de Excel simulado | Confirmado ([Q-11](../preguntas-pendientes.md#q-11)) |
+| Imprimir | Botón Imprimir; toast de PDF simulado | Confirmado ([Q-11](../preguntas-pendientes.md#q-11)) |
 
-{% hint style="warning" %}
-**Por validar:** si el límite es 30 días corridos o el mismo mes calendario ([Q-10](../preguntas-pendientes.md#q-10)).
+{% hint style="success" %}
+**Confirmado:** enero completo (1 al 31) es válido. Del 1 de enero al 1 de febrero no: son meses distintos y suman más de 30 días.
 {% endhint %}
 
 {% hint style="info" %}
@@ -51,13 +52,13 @@ Elige la vista **Resumen** o **Detalle** y verifica que cambia la tabla principa
 {% step %}
 ### Revisa el límite de rango
 
-Revisa que el rango respete el límite acordado (Q-10); anota que el prototipo aún no lo enforcea.
+Prueba un mes completo de 31 días (válido) y un cruce de meses de más de 30 días (la búsqueda no corre).
 {% endstep %}
 
 {% step %}
 ### Prueba exportar
 
-Prueba **Exportar** (simulado) y confirma qué falta respecto de **Imprimir** (Q-11).
+Prueba **Exportar** (Excel simulado) e **Imprimir** (PDF simulado).
 {% endstep %}
 {% endstepper %}
 

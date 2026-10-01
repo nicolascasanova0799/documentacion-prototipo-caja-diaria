@@ -5,7 +5,7 @@ icon: circle-question
 
 # Preguntas pendientes
 
-**Respuesta primero:** la mayoría de las preguntas sigue abierta. Ya quedaron cerradas Q-12 (la transferencia por corroborar entra en la línea Transferencias), P-05 (el checkbox “Agregar a control interno” viene desmarcado por defecto) y Q-13 (el modal solo se abre desde Detalle; GetNet no lo abre mientras no exista su tabla de detalle).
+**Respuesta primero:** la mayoría de las preguntas sigue abierta. Ya quedaron cerradas Q-10 (mismo mes completo, o 30 días si cruza de mes), Q-11 (Exportar es Excel e Imprimir es PDF), Q-12 (la transferencia por corroborar entra en la línea Transferencias), P-05 (el checkbox “Agregar a control interno” viene desmarcado por defecto) y Q-13 (el modal solo se abre desde Detalle; GetNet no lo abre mientras no exista su tabla de detalle).
 
 {% hint style="info" %}
 **Cifras ilustrativas:** los montos, choferes y usuarios de esta página son cifras ilustrativas del prototipo (datos simulados, commit 2ce55a3b). No son datos reales ni cifras validadas.
@@ -190,14 +190,14 @@ icon: circle-question
 
 | | Contenido |
 |---|-----------|
-| Conocido | Debe existir límite (L, RID-01); prototipo no lo aplica |
-| Desconocido | Forma exacta del límite |
-| Estado | Por validar |
-| Fuente | L §4, RID-01, L §9 |
+| Conocido | Si ambas fechas caen en el **mismo mes calendario**, se permite el mes completo, aunque tenga 31 días. Si las fechas son de **meses distintos**, el rango no puede superar **30 días** (fecha fin − fecha inicio). El prototipo ya rechaza la búsqueda cuando se pasa de ese límite. |
+| Desconocido | — |
+| Estado | Confirmado |
+| Fuente | L §4, RID-01, L §9; aclaración del 01-10-2026 |
 | Ver también | [Filtros, vistas y exportación](flujo/01-filtros-vistas-y-exportacion.md) |
 
-{% hint style="warning" %}
-**Por validar:** falta confirmación del cliente antes de construir.
+{% hint style="success" %}
+**Confirmado:** mismo mes = mes completo (28, 29, 30 o 31 días). Meses distintos = máximo 30 días.
 {% endhint %}
 
 ---
@@ -208,14 +208,14 @@ icon: circle-question
 
 | | Contenido |
 |---|-----------|
-| Conocido | Levantamiento exige exportar e imprimir; prototipo simula Excel/PDF sin Imprimir |
-| Desconocido | Formatos por vista y canal de impresión |
-| Estado | Por validar |
-| Fuente | L §4, RFP-05 |
+| Conocido | **Exportar** genera **Excel**. **Imprimir** genera **PDF**. Aplican a la vista que esté en pantalla (Resumen o Detalle). El prototipo muestra ambos botones y simula el archivo. |
+| Desconocido | — |
+| Estado | Confirmado |
+| Fuente | L §4, RFP-05; aclaración del 01-10-2026 |
 | Ver también | [Filtros, vistas y exportación](flujo/01-filtros-vistas-y-exportacion.md) |
 
-{% hint style="warning" %}
-**Por validar:** falta confirmación del cliente antes de construir.
+{% hint style="success" %}
+**Confirmado:** Exportar = Excel. Imprimir = PDF.
 {% endhint %}
 
 ---

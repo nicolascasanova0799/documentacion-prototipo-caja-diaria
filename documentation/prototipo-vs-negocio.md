@@ -23,8 +23,8 @@ icon: code-compare
 | Anticipos regla técnica | Por validar consulta | Fila Origen Anticipo en detalle Transferencias | Por validar / ilustrativo |
 | Cobranza | Por validar flujo cartera (P-03) | Cash-in facturas anteriores suma a Total Caja | Supuesto del prototipo |
 | Valor por defecto del control interno | Desmarcado por defecto (P-05) | Checkbox desmarcado por defecto | Confirmado ([P-05](preguntas-pendientes.md#p-05)) |
-| Rango fechas | Máx mes o 30 días confirmado | Solo inicio ≤ fin | Supuesto del prototipo (demo) |
-| Exportar / Imprimir | Ambos requeridos | Excel/PDF simulados; sin Imprimir | Por validar ([Q-11](preguntas-pendientes.md#q-11)) |
+| Rango fechas | Mismo mes completo; entre meses, máximo 30 días | El filtro rechaza rangos que se pasan | Confirmado ([Q-10](preguntas-pendientes.md#q-10)) |
+| Exportar / Imprimir | Exportar = Excel; Imprimir = PDF | Botones Exportar e Imprimir, archivos simulados | Confirmado ([Q-11](preguntas-pendientes.md#q-11)) |
 | Total Caja fórmula | IMG/Excel 76.485.516 incluye Total Rutas | ingresos − egresos sin Total Rutas = 19.761.186 neto | Por validar ([Q-06](preguntas-pendientes.md#q-06)) |
 | Total Rutas cifra | L/IMG discrepancias menores | 34.420.754 | Por validar ([Q-07](preguntas-pendientes.md#q-07)) |
 | Cheques monto | IMG-R 5.303.368 vs IMG-D 5.503.368 | 5.503.368 | Por validar ([Q-07](preguntas-pendientes.md#q-07)) |
